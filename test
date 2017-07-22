@@ -1,0 +1,44 @@
+Return-Path: <bounce+6e926d.4fa853-wayin=r53.icgx.co@wayin.info>
+Received: from p64.mailgun.us (p64.mailgun.us [184.173.105.64])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id mh2da9t0a7ifu3o2piv4tl96n9djlk46v2f0ocg1
+ for wayin@r53.icgx.co;
+ Fri, 21 Jul 2017 14:46:42 +0000 (UTC)
+Received-SPF: none (spfCheck: 184.173.105.64 is neither permitted nor denied by domain of wayin.info) client-ip=184.173.105.64; envelope-from=bounce+6e926d.4fa853-wayin=r53.icgx.co@wayin.info; helo=p64.mailgun.us;
+Authentication-Results: amazonses.com;
+ spf=none (spfCheck: 184.173.105.64 is neither permitted nor denied by domain of wayin.info) client-ip=184.173.105.64; envelope-from=bounce+6e926d.4fa853-wayin=r53.icgx.co@wayin.info; helo=p64.mailgun.us;
+ dkim=permerror header.i=@wayin.info;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHZEVjQUN4U3NoeEtRWDVjUWkyaEZKdjhUNWdsTEx6M09SVmh2V2c0N1Nqa0RSVjg1SWhJLytvbkNzaktadWowSStVUTJDTXI4ZVB2amlncTNUS0l6TlZKUWU2WGNnMkNubDI3dk5ZQlFzbFZHK0VxeS9CaXFFN2NJb0pkRVlDR3F4cE1hOHc0aG5ZRDlsQnRRSmJhRUphYk5CUDZqTC9acFVscHdGK1JRVzdOKzdKdXJjUmVBQklXTkdtdGxTSnArZlJBdHBsZHFPdGJlenpSZkRDVVdEMW95R0YwK2dMV1dFSTZkeEhvM0Q1QjJPK0szNVBxdWQrdFlUaUR5QWJCeUh0bjdWK3RlMXR2QnplR1pESExVRnk1citRZzJDUUFNbDViK2pRQWNIL0wydXlLSFZnaHlZcnA2cDczbWRDNzdnWXRmb0NnaDVCdEZKTFk5amdDVmM=
+X-SES-DKIM-SIGNATURE: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1500648402;
+	h=X-SES-RECEIPT:Date:Message-Id:To:From:Subject:Content-Type:Mime-Version;
+	bh=c7AmQF4t2jT/Lbq1+UCzPmyZnF8kegxv5PQjNNRNdVQ=;
+	b=Ibc9hOPMBZQZ2Zu6WGU7py3bf+I2ZErx0e2vgozufyjxs6V8tiIzi2/3SQ1nDFKT
+	xbebU+Zy8CCnNn4cERa50RVOV11BaYGDY8IA0NfyEt4AKYdqSAaUGQArMFKAupjGVfx
+	naPxRHyYWoGgnRv+NUiPr5XBxiiOg6kIjOVdd2Vs=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=wayin.info; q=dns/txt; s=k1;
+ t=1500648401; h=Mime-Version: Content-Type: Subject: From: To:
+ Reply-To: Message-Id: Content-Transfer-Encoding: Date: Sender;
+ bh=c7AmQF4t2jT/Lbq1+UCzPmyZnF8kegxv5PQjNNRNdVQ=; b=jwXfvXFxKbz4dMFSc0TtynKULQiz1G8xnP3TzNlB8mTLC/6bRmZQsPm3bW865nefevgXojZM
+ A7IDlvPWiEVkfMiPgt32OcAiOd97txIDJFT+Nof5xdMdKpD5LCUXYzDuMn1AkNqkVEskI9ZH
+ JVXNx4yznKRXE+afwtDkIdAUqvU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=wayin.info; s=k1; q=dns;
+ h=Sender: Date: Content-Transfer-Encoding: Message-Id: Reply-To: To:
+ From: Subject: Content-Type: Mime-Version;
+ b=IowhgNoVxMleBcEabd/TgAOoS0cE5umfqKF2UV4l3ZOqk3CTEhH5u9BNwoX54OjjicLN+N
+ WByigONqCPAzp1BCKy00Xl0x3cnUh4PG/ahQrcXL1yzBxX7p2e0sD6c077dtMx/J9qZPK2ic
+ 0FEwRPFD+rnGEUKxrUpjjzmLK4/Ds=
+Sender: no-reply@wayin.info
+Date: Fri, 21 Jul 2017 14:46:41 +0000
+X-Mailgun-Sending-Ip: 184.173.105.64
+X-Mailgun-Sid: WyI0ZmY2MCIsICJ3YXlpbkByNTMuaWNneC5jbyIsICI0ZmE4NTMiXQ==
+Content-Transfer-Encoding: 7bit
+Received: by luna.mailgun.net with HTTP; Fri, 21 Jul 2017 14:46:40 +0000
+Message-Id: <20170721144640.44691.7C9B750FB48B313B@wayin.info>
+Reply-To: test@t.com
+To: wayin@r53.icgx.co
+From: no-reply@wayin.info
+Subject: Smartone Meme Generator Demo
+Content-Type: text/plain; charset="ascii"
+Mime-Version: 1.0
+
+{"campaign_name":"Smartone Meme Generator Demo","external_ref":"20170720103252_smartone_demo", "entry_id":"d7b26ac8-f082-4733-92d9-f1f8b77d0afd","entry_date":"1500648399091", "first_name":"Ben", "last_name":"NG", "email":"test@t.com", "asset":"weburl:image:https://s3-ap-southeast-1.amazonaws.com/wayindemo.icgx.co/meme/23437440-8ef6-4a99-ba85-c307f686d260.jpg"}
